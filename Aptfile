@@ -2,3 +2,5 @@ jq
 pv
 pkg-config
 sudo
+libsudo_util
+pkexec
