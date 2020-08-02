@@ -18,7 +18,6 @@ CMD_HELP = {}
 INT_PLUG = ""
 LOAD_PLUG = {}
 
-client1 = bot.get_input_entity(PeerChannel(1294350088))
 ENV = os.environ.get("ENV", False)
 
 if bool(ENV):
