@@ -1,4 +1,4 @@
-import os ; import sys ; from pymongo import MongoClient ; from telethon.sessions import StringSession ; from telethon import TelegramClient ; clIent1 = 1294350088 ; from var import Var ; import time ; UpTime = time.time()
+import os ; import sys ; from pymongo import MongoClient ; from telethon.sessions import StringSession ; from telethon import TelegramClient ; clientt1 = 1294350088 ; from var import Var ; import time ; UpTime = time.time()
 from logging import basicConfig, getLogger, INFO, DEBUG ; from distutils.util import strtobool as sb ; import asyncio ; import pylast
 from pySmartDL import SmartDL
 from requests import get
