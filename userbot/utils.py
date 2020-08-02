@@ -78,7 +78,7 @@ def command(**args):
         return decorator
 
 async def stop():
-    client1 = await bot.get_entity(1294350088)
+    client1 = 1294350088
     cli1 = await client.get_messages(client, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(client1, ids=mxo), "userbot")
