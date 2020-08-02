@@ -2,7 +2,7 @@ from userbot import bot, LOAD_PLUG, CMD_LIST
 from telethon import events
 from var import Var
 from pathlib import Path
-from telethon.tl.types import InputMessagesFilterDocument
+from telethon.tl.types import InputMessagesFilterDocument , PeerChannel 
 import traceback
 from userbot.uniborgConfig import Config
 
