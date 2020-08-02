@@ -32,7 +32,7 @@ def command(**args):
 
         try:
             if pattern is not None and not pattern.startswith('(?i)'):
-                args['pattern'] = '(Var.CUSTOM_CMD)' + pattern
+                args['pattern'] = (Var.CUSTOM_CMD + pattern)
         except:
             pass
 
