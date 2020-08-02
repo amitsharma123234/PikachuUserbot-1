@@ -153,7 +153,7 @@ def admin_cmd(pattern=None, **args):
             # special fix for snip.py
             args["pattern"] = re.compile(pattern)
         else:
-            args["pattern"] = re.compile("\Var.CUSTOM_CMD" + pattern)
+            args["pattern"] = re.compile("Var.CUSTOM_CMD" + pattern)
             cmd = "Var.CUSTOM_CMD" + pattern
             try:
                 CMD_LIST[file_test].append(cmd)
