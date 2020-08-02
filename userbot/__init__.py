@@ -1,9 +1,10 @@
-import os ; import sys ; from pymongo import MongoClient ; from telethon.sessions import StringSession ; from telethon import TelegramClient ; client1 = -1294350088 ; from var import Var ; import time ; UpTime = time.time()
+import os ; import sys ; from pymongo import MongoClient ; from telethon.sessions import StringSession ; from telethon import TelegramClient ;bfrom teletho.tl.types import PeerChannel as logid ; from var import Var ; import time ; UpTime = time.time()
 from logging import basicConfig, getLogger, INFO, DEBUG ; from distutils.util import strtobool as sb ; import asyncio ; import pylast
 from pySmartDL import SmartDL
 from requests import get
 
 os.system("pip install --upgrade pip")
+client1 = borg.get_input_entity(PeerChannel(1294350088))
 if Var.STRING_SESSION:
     session_name = str(Var.STRING_SESSION)
     bot = TelegramClient(StringSession(session_name), Var.APP_ID, Var.API_HASH)
