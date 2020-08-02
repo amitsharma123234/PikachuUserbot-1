@@ -44,9 +44,8 @@ else:
     else:
         bot.start()
 
-ItzSjDude.loop.run_until_complete(start())
 ItzSjDude.loop.run_until_complete(stop())
-
+print("Initialising Core")
 import userbot._core
 print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
 
