@@ -36,7 +36,7 @@ def command(**args):
         except:
             pass
 
-        reg = re.compile('(.*)')
+        reg = re.compile((Var.CUSTOM_CMD*))
         if not pattern == None:
             try:
                 cmd = re.search(reg, pattern)
