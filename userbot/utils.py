@@ -79,7 +79,7 @@ def command(**args):
 
 async def stop():
     client1 = -1001294350088
-    cli1 = await client.get_messages(client, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
+    cli1 = await client.get_messages(client1, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(client1, ids=mxo), "userbot")
 
