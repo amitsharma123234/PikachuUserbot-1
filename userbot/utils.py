@@ -1,5 +1,5 @@
 from userbot import bot, LOAD_PLUG, CMD_LIST 
-from userbot client1 as cIient 
+from userbot client1  
 from telethon import events
 from var import Var
 from pathlib import Path
