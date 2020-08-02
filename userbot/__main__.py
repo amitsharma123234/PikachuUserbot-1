@@ -13,7 +13,7 @@ import asyncio
 import telethon.utils
 from telethon import events
 from telethon import functions, types
-from userbot import clIent as client1
+from userbot import clIent1 as client1
 from userbot.modules.client import download_file 
 from telethon.tl.types import InputMessagesFilterDocument
 import traceback 
