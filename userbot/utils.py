@@ -1,12 +1,11 @@
-from userbot import bot
+from userbot import bot, LOAD_PLUG, CMD_LIST, client1
 from telethon import events
 from var import Var
 from pathlib import Path
 from telethon.tl.types import InputMessagesFilterDocument
 import traceback
 from userbot.uniborgConfig import Config
-from userbot import LOAD_PLUG
-from userbot import CMD_LIST
+
 import re
 import time 
 import logging
