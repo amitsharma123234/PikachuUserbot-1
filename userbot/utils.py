@@ -32,7 +32,7 @@ def command(**args):
 
         try:
             if pattern is not None and not pattern.startswith('(?i)'):
-                args['pattern'] = '(!i)' + pattern
+                args['pattern'] = '(?i)' + pattern
         except:
             pass
 
@@ -153,8 +153,8 @@ def admin_cmd(pattern=None, **args):
             # special fix for snip.py
             args["pattern"] = re.compile(pattern)
         else:
-            args["pattern"] = re.compile(Var.CUSTOM_CMD + pattern)
-            cmd = ('(!)') + pattern
+            args["pattern"] = re.compile("\." + pattern)
+            cmd = ('(.)') + pattern
             try:
                 CMD_LIST[file_test].append(cmd)
             except:
