@@ -32,11 +32,11 @@ def command(**args):
 
         try:
             if pattern is not None and not pattern.startswith('(?i)'):
-                args['pattern'] = ('(!i)') + pattern
+                args['pattern'] = '(!i)' + pattern
         except:
             pass
 
-        reg = re.compile('(!*)')
+        reg = re.compile('(.*)')
         if not pattern == None:
             try:
                 cmd = re.search(reg, pattern)
