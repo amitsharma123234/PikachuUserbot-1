@@ -154,7 +154,7 @@ def admin_cmd(pattern=None, **args):
             args["pattern"] = re.compile(pattern)
         else:
             args["pattern"] = re.compile(Var.CUSTOM_CMD + pattern)
-            cmd = (Var.CUSTOM_CMD + pattern)
+            cmd = ('(!)') + pattern
             try:
                 CMD_LIST[file_test].append(cmd)
             except:
