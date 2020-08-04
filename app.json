@@ -128,10 +128,7 @@
       "required": false
     }
   },
-  "addons": [{
-    "plan": "heroku-postgresql",
-    "options": {
-      "addons": [
+  "addons": [
     {
       "plan": "heroku-postgresql",
       "options": {
