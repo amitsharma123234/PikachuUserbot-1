@@ -61,6 +61,6 @@ RUN adduser admin sudo
 RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 USER admin
 RUN git clone https://github.com/ItzSjDude/PikachuUserbot /home/userbot
-pip3 install -r requirements.txt
+RUN pip3 install -r requirements.txt
 CMD ["python3","-m","userbot"]
 
