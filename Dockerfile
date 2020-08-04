@@ -3,8 +3,8 @@ FROM ubuntu:18.04
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Moscow
 
+RUN apt-get update && apt upgrade -y && apt-get install sudo
 RUN apt-get install -y\
-    sudo \ 
     coreutils \
     bash \
     nodejs \
@@ -45,9 +45,7 @@ RUN apt-get install -y\
     libsqlite3-dev \
     zlib1g-dev \
     recoverjpeg \
-    zip \
-    megatools 
-
+    zip
 
 
 
