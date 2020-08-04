@@ -39,12 +39,10 @@ RUN apt-get install -y\
     python3-dev \
     python3-pip \
     libreadline-dev \
-    openjdk-13-jdk \
     zipalign \
     sqlite \
     ffmpeg \
     libsqlite3-dev \
-    chromium \
     zlib1g-dev \
     recoverjpeg \
     zip \
