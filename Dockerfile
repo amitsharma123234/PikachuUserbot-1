@@ -1,6 +1,6 @@
 
 FROM ubuntu:18.04
-RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
+RUN DEBIAN_FRONTEND=noninteractive sudo apt-get install -y tzdata
 
 RUN apt-get install -y\
     sudo \ 
