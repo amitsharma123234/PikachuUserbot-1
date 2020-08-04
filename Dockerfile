@@ -1,8 +1,10 @@
 
 FROM ubuntu:18.04
-RUN apt-get update && apt upgrade -y && apt-get install sudo
-
-RUN apt-get install -y\
+RUN DEBIAN_FRONTEND=noninteractive \
+    TZ=Asia/Singapore \
+    apt-get update && 
+    apt-get install -y\
+    sudo \ 
     coreutils \
     bash \
     nodejs \
