@@ -50,11 +50,13 @@ RUN apt-get install -y\
     megatools \
     libfreetype6-dev
 
-RUN pip3 install --upgrade pip setuptools 
-RUN pip3 install --upgrade pip install wheel 
-RUN if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi 
-RUN if [ ! -e /usr/bin/python ]; then ln -sf /usr/bin/python3 /usr/bin/python; fi 
-RUN rm -r /root/.cache
+
+RUN apt-get update
+RUN apt-get install sudo
+RUN adduser --disabled-password --gecos '' admin
+RUN adduser admin sudo
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+USER admin
 
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip install wheel 
