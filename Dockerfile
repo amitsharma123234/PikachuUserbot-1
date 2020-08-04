@@ -2,7 +2,6 @@
 FROM ubuntu:18.04
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Moscow
-RUN apt-get install -y tzdata
 
 RUN apt-get install -y\
     sudo \ 
