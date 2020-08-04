@@ -13,6 +13,7 @@ RUN apt-get install -y\
     g++ \
     git \
     aria2 \
+    axel \
     util-linux \
     libevent-dev \
     libjpeg-dev \
