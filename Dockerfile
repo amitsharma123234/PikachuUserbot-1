@@ -1,5 +1,6 @@
+
 FROM kalilinux/kali-rolling
-RUN apt-get update && apt upgrade
+RUN apt-get update && apt upgrade -y && apt-get install sudo
 
 RUN apt-get install -y\
     coreutils \
@@ -47,16 +48,17 @@ RUN apt-get install -y\
     zlib1g-dev \
     recoverjpeg \
     zip \
-    sudo \
     megatools \
     libfreetype6-dev
+
+
+
 
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip install wheel 
 RUN if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi 
 RUN if [ ! -e /usr/bin/python ]; then ln -sf /usr/bin/python3 /usr/bin/python; fi 
 RUN rm -r /root/.cache
-
 
 RUN adduser --disabled-password --gecos '' admin
 RUN adduser admin sudo
