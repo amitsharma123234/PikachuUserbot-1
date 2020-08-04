@@ -2,8 +2,8 @@
 FROM ubuntu:18.04
 RUN DEBIAN_FRONTEND=noninteractive \
     TZ=Asia/Singapore \
-    apt-get update && 
-    apt-get install -y\
+    apt-get update 
+RUN apt-get install -y\
     sudo \ 
     coreutils \
     bash \
