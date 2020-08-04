@@ -1,4 +1,4 @@
-FROM ubuntu:rolling
+FROM kalilinux/kali-rolling
 RUN apt-get update && apt upgrade -y && apt-get install sudo
 
 RUN apt-get install -y\
