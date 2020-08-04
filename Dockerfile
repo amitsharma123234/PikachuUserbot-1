@@ -1,6 +1,8 @@
 
 FROM ubuntu:18.04
-RUN DEBIAN_FRONTEND=noninteractive sudo apt-get install -y tzdata
+ARG DEBIAN_FRONTEND=noninteractive
+ENV TZ=Europe/Moscow
+RUN apt-get install -y tzdata
 
 RUN apt-get install -y\
     sudo \ 
