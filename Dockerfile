@@ -1,7 +1,8 @@
 
 FROM ubuntu:18.04
+DEBIAN_FRONTEND=noninteractive sudo apt-get install -y tzdata
 RUN DEBIAN_FRONTEND=noninteractive \
-    TZ=Asia/Singapore \
+    TZ=Indian \
     apt-get update 
 RUN apt-get install -y\
     sudo \ 
