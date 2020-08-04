@@ -1,5 +1,5 @@
 FROM kalilinux/kali-rolling
-RUN apt-get update && apt upgrade -y && apt-get install sudo
+RUN apt-get update && apt upgrade
 
 RUN apt-get install -y\
     coreutils \
@@ -47,6 +47,7 @@ RUN apt-get install -y\
     zlib1g-dev \
     recoverjpeg \
     zip \
+    sudo \
     megatools \
     libfreetype6-dev
 
