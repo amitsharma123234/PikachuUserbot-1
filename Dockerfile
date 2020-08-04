@@ -53,17 +53,16 @@ RUN apt-get install -y\
 
 
 
+RUN adduser --disabled-password --gecos '' admin
+RUN adduser admin sudo
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+USER admin
 
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip install wheel 
 RUN if [ ! -e /usr/bin/pip ]; then ln -s pip3 /usr/bin/pip ; fi 
 RUN if [ ! -e /usr/bin/python ]; then ln -sf /usr/bin/python3 /usr/bin/python; fi 
 RUN rm -r /root/.cache
-
-RUN adduser --disabled-password --gecos '' admin
-RUN adduser admin sudo
-RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-USER admin
 
 RUN git clone https://github.com/ItzSjDude/PikachuUserbot /root/userbot
 RUN mkdir /root/userbot/bin/
