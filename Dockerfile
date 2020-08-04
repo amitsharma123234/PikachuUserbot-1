@@ -48,10 +48,6 @@ RUN apt-get install -y\
 
 
 
-RUN adduser --disabled-password --gecos '' admin
-RUN adduser admin sudo
-RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
-USER admin
 
 RUN pip3 install --upgrade pip setuptools 
 RUN pip3 install --upgrade pip install wheel 
@@ -64,5 +60,9 @@ RUN mkdir /root/userbot/bin/
 WORKDIR /root/userbot/
 RUN chmod +x /usr/local/bin/*
 RUN pip3 install -r requirements.txt
+RUN adduser --disabled-password --gecos '' admin
+RUN adduser admin sudo
+RUN echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+USER admin
 CMD ["python3","-m","userbot"]
 
