@@ -1,5 +1,5 @@
 
-FROM ubuntu:18.04
+FROM ubuntu:latest
 ARG DEBIAN_FRONTEND=noninteractive
 ENV TZ=Europe/Moscow
 
@@ -60,5 +60,5 @@ RUN git clone https://github.com/ItzSjDude/PikachuUserbot /root/userbot
 RUN mkdir /root/userbot/bin/
 WORKDIR /root/userbot/
 RUN pip3 install -r requirements.txt
-CMD ["python","-m","userbot"]
+CMD ["python3","-m","userbot"]
 
