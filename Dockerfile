@@ -1,5 +1,5 @@
 
-FROM kalilinux:rolling
+FROM kalilinux/rolling
 RUN apt-get update && apt upgrade -y && apt-get install sudo
 
 RUN apt-get install -y\
