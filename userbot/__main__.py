@@ -1,6 +1,4 @@
-from userbot import bot
-from sys import* 
-from var import Client as clIent
+from userbot import bot ; from sys import* ; from var import Client as clIent ; client = bot ; ItzSjDude = client
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
 import telethon
@@ -15,7 +13,7 @@ from telethon import functions, types
 from userbot.modules.client import download_file 
 from telethon.tl.types import InputMessagesFilterDocument
 import traceback 
-ItzSjDude = bot
+
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
