@@ -4,7 +4,6 @@ import sys
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
 import telethon
-from userbot.utils import *
 from telethon import TelegramClient
 from var import Var
 from userbot import LOAD_PLUG, BOTLOG_CHATID, LOGS
@@ -22,8 +21,6 @@ async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me() 
     bot.uid = telethon.utils.get_peer_id(bot.me)
-
-
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
@@ -43,9 +40,13 @@ else:
         print("Startup Completed")
     else:
         bot.start()
-
+async def stop():
+    cli1 = await client.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
+    for ixo in total_doxx:
+        mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot")
 ItzSjDude.loop.run_until_complete(stop())
 print("Initialising Core")
+from userbot.utils import *
 import userbot._core
 print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
 
