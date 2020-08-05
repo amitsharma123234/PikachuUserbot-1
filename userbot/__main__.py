@@ -1,6 +1,6 @@
 from userbot import bot
-from sys import argv
-import sys
+from sys import* 
+from var import Client as clIent
 from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
 import os
 import telethon
