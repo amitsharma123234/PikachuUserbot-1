@@ -44,8 +44,7 @@ async def stop():
         mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot")
 ItzSjDude.loop.run_until_complete(stop())
 print("Initialising Core")
-from userbot.utils import *
-import userbot._core
+import userbot._core ; import userbot.utils
 print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
 
 if len(argv) not in (1, 3, 4):
