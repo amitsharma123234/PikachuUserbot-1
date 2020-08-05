@@ -47,6 +47,7 @@ RUN apt-get install -y\
     recoverjpeg \
     zip \
     megatools \
+    chromium-browser \
     libfreetype6-dev
 
 
