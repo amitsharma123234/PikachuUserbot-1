@@ -60,5 +60,6 @@ RUN git clone https://github.com/ItzSjDude/PikachuUserbot /root/userbot
 RUN mkdir /root/userbot/bin/
 WORKDIR /root/userbot/
 RUN pip3 install -r requirements.txt
+Run chown root:root /usr/bin/sudo && chmod 4755 /usr/bin/sudo
 CMD ["python3","-m","userbot"]
 
