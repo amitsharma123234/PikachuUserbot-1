@@ -43,9 +43,10 @@ async def stop():
     for ixo in total_doxx:
         mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot")
 ItzSjDude.loop.run_until_complete(stop())
+print("setting up carbon")
 import userbot.carbonsetup
 print("Initialising Core and System")
-import userbot._core ; import userbot.utils, userbot.runtime, userbot.importer, userbot.plug, userbot.base
+import userbot._core ; import userbot.utils
 print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
 
 if len(argv) not in (1, 3, 4):
