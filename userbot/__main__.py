@@ -1,4 +1,4 @@
-import os, telethon, telethon.utils, asyncio, traceback ; from userbot import * ; from sys import * ; from var import * ; client = bot ; ItzSjDude = client ; from telethon.errors.rpcerrorlist import * ; from var import Var ; from pathlib import Path ; from telethon import * ; from telethon.tl.types import * 
+import os, telethon, telethon.utils, asyncio, traceback ; from userbot import * ; from sys import * ; from var import * ; client = bot ; ItzSjDude = client ; from telethon.errors.rpcerrorlist import * ; from var import clIent ; from pathlib import Path ; from telethon import * ; from telethon.tl.types import * 
 async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me() 
