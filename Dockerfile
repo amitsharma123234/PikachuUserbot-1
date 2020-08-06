@@ -1,5 +1,5 @@
 
-FROM fedora:latest
+FROM kalilinux/kali
 
 RUN apt-get update && apt upgrade -y && apt-get install sudo
 RUN apt-get install -y\
