@@ -45,7 +45,7 @@ async def stop():
 ItzSjDude.loop.run_until_complete(stop())
 import userbot.carbonsetup
 print("Initialising Core and System")
-import userbot._core ; import userbot.utils, userbot.Runtime, userbot.importer, userbot.plug, userbot.base
+import userbot._core ; import userbot.utils, userbot.runtime, userbot.importer, userbot.plug, userbot.base
 print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
 
 if len(argv) not in (1, 3, 4):
