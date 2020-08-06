@@ -1,7 +1,5 @@
 
-FROM ubuntu:latest
-ARG DEBIAN_FRONTEND=noninteractive
-ENV TZ=Europe/Moscow
+FROM fedora:latest
 
 RUN apt-get update && apt upgrade -y && apt-get install sudo
 RUN apt-get install -y\
