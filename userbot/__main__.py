@@ -1,25 +1,8 @@
-from userbot import bot ; from sys import* ; from var import Client as clIent ; client = bot ; ItzSjDude = client
-from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
-import os
-import telethon
-from telethon import TelegramClient
-from var import Var
-from userbot import LOAD_PLUG, BOTLOG_CHATID, LOGS
-from pathlib import Path
-import asyncio
-import telethon.utils
-from telethon import events
-from telethon import functions, types
-from userbot.modules.client import download_file 
-from telethon.tl.types import InputMessagesFilterDocument
-import traceback 
-
-
+import os, telethon, telethon.utils, asyncio, traceback ; from userbot import * ; from sys import * ; from var import * ; client = bot ; ItzSjDude = client ; from telethon.errors.rpcerrorlist import * ; from var import Var ; from pathlib import Path ; from telethon import * ; from telethon.tl.types import * 
 async def add_bot(bot_token):
     await bot.start(bot_token)
     bot.me = await bot.get_me() 
     bot.uid = telethon.utils.get_peer_id(bot.me)
-
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
@@ -38,17 +21,12 @@ else:
         print("Startup Completed")
     else:
         bot.start()
+print("Loading Main Plugs..")
 async def stop():
     cli1 = await client.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot/main_plugs")
-ItzSjDude.loop.run_until_complete(stop())
-print("setting up carbon")
-import userbot.carbonsetup
-print("Initialising Core and System")
-import userbot._core ; import userbot.utils
-print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
-
+ItzSjDude.loop.run_until_complete(stop()) ; print("Loaded Sucessfully") ; print("setting up carbon") ; import userbot.carbonsetup ; print("Initialising Core and System") ; import userbot.main_plugs._core ; import userbot.main_plugs.utils ; print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
