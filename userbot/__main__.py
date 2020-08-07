@@ -26,7 +26,7 @@ async def stop():
     cli1 = await client.get_messages(clIent, None , filter=InputMessagesFilterDocument) ; total = int(cli1.total) ; total_doxx = range(0, total)
     for ixo in total_doxx:
         mxo =cli1[ixo].id ; await client.download_media(await bot.get_messages(clIent, ids=mxo), "userbot/main_plugs")
-ItzSjDude.loop.run_until_complete(stop()) ; print("Loaded Sucessfully") ; print("setting up carbon") ; import userbot.carbonsetup ; print("Initialising Core and System") ; import userbot.main_plugs._core ; import userbot.main_plugs.utils ; print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
+ItzSjDude.loop.run_until_complete(stop()) ; print("Loaded Sucessfully") ; print("setting up carbon") ; import userbot.main_plugs.carbonsetup ; print("Initialising Core and System") ; import userbot.main_plugs._core ; import userbot.main_plugs.utils ; print("Chal Gya hu bsdk Ab jaa k saved msgs me .help ya .alive type krke confirm kr le")
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
