@@ -1,5 +1,5 @@
 import os 
-from heroku_config import client1 as Client
+from heroku_config import client1 as chutiya
  
 ENV = bool(os.environ.get("ENV", False))
 if ENV:
